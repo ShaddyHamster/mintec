@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+
+  <div className="container">
+    <form onsubmit="SendEmail(); reset(); return false">
+      <h3>GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your Name" required></input>
+      <input type="email" id="email" placeholder="Email ID" required></input>
+      <input type="text" id="phone" placeholder="Phone Number" required></input>
+      <textarea id="message" rows="4" placeholder="How Can We Help You"></textarea>
+      <button type="submit">Send Us</button>
+    </form>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="./src/index.js"></script>
+</body>
+
+</html>
